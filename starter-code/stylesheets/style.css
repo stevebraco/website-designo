@@ -1,0 +1,241 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select, textarea {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+td:not([align]), th:not([align]) {
+  text-align: left;
+}
+
+.flexbox-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.max-container {
+  max-width: 1126px;
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 4rem;
+  text-decoration: none;
+  padding: 1.7rem 2.5rem;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.5s ease;
+}
+.btn:hover {
+  background-color: #ffad9b;
+  color: white;
+}
+
+.btn--grey {
+  background-color: #f1f3f5;
+  color: #1d1c1e;
+}
+
+.btn--peach {
+  background-color: #e7816b;
+  color: white;
+}
+
+.heading2 {
+  margin-bottom: 2.4rem;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+  color: #1d1c1e;
+}
+
+h1 {
+  font-size: 4.8rem;
+  font-weight: 500;
+  line-height: 4.8rem;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 4.8rem;
+  letter-spacing: 2px;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 2.6rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.menu {
+  margin: 6.4rem 0;
+  justify-content: space-between;
+}
+.menu__logo {
+  max-width: 19.5rem;
+}
+.menu__navigation__link {
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #1d1c1e;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-left: 4rem;
+}
+
+.award-wining {
+  background-image: url(/starter-code/assets/home/desktop/image-hero-phone.png), url(/starter-code/assets/home/desktop/bg-pattern-hero-home.svg);
+  background-repeat: no-repeat;
+  background-position: 47.4rem -3rem, right bottom;
+  background-size: auto;
+  background-color: #e7816b;
+  color: white;
+  border-radius: 15px;
+  padding: 0 9.5rem;
+  margin-bottom: 16rem;
+}
+.award-wining__container {
+  max-width: 47.5rem;
+  padding: 14.5rem 0;
+}
+.award-wining__container__p {
+  max-width: 44.5rem;
+  padding-top: 3.2rem;
+}
+.award-wining__image {
+  width: 47%;
+}
+
+.design {
+  color: white;
+  justify-content: space-between;
+  text-transform: uppercase;
+  margin-bottom: 16rem;
+}
+.design__web-design {
+  border-radius: 15px;
+  padding: 27.3rem 13.8rem;
+  text-align: center;
+  margin-right: 2.9rem;
+  background-image: url(/starter-code/assets/home/desktop/image-web-design-large1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.design__container-app-graphic__app-design {
+  border-radius: 15px;
+  padding: 10.7rem 14.4rem;
+  text-align: center;
+  margin-bottom: 2.3rem;
+  background-image: url(/starter-code/assets/home/desktop/image-app-design1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.design__container-app-graphic__graphic-design {
+  border-radius: 15px;
+  padding: 10.7rem 9.5rem;
+  text-align: center;
+  background-image: url(/starter-code/assets/home/desktop/image-graphic-design1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.project {
+  text-align: center;
+  margin-bottom: 16rem;
+}
+.project__passionate, .project__resourceful, .project__friendly {
+  max-width: 35rem;
+}
+.project__passionate__heading3, .project__resourceful__heading3, .project__friendly__heading3 {
+  margin-bottom: 3.2rem;
+}
+.project__passionate__image, .project__resourceful__image, .project__friendly__image {
+  margin-bottom: 4.8rem;
+}
+.project__resourceful {
+  margin: 0 3rem;
+}
+
+.talk-about {
+  background-color: #e7816b;
+  color: white;
+  border-radius: 15px;
+  padding: 0 9.5rem;
+  justify-content: space-between;
+}
+.talk-about__container {
+  max-width: 44.9rem;
+  padding: 3rem 0 7.2rem 0;
+}
+.talk-about__container__heading2 {
+  max-width: 26.8rem;
+  margin-bottom: 1.9rem;
+}
+.talk-about__link {
+  align-self: center;
+}
+
+/*# sourceMappingURL=style.css.map */

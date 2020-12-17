@@ -1,0 +1,262 @@
+@import '../sass/reset.scss';
+
+$color-peach: rgba(231, 129, 107, 1);
+$color-lightpeach: rgba(255, 173, 155, 1);
+$color-black: rgba(29, 28, 30, 1);
+$color-darkgrey: rgba(51, 49, 54, 1);
+$color-white: rgba(255, 255, 255, 1);
+$color-lightgrey: rgba(241, 243, 245, 1);
+
+.flexbox-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.max-container {
+    max-width: 1126px;
+    margin: 0 auto;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 4rem;
+    text-decoration: none;
+    padding: 1.7rem 2.5rem;
+    border-radius: 8px;
+    font: {
+        size: 1.5rem;
+        weight: 500;
+    }
+    line-height: 2.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: .5s ease;
+
+    &:hover {
+        background-color: $color-lightpeach;
+        color: $color-white;
+    }
+}
+
+.btn--grey {
+    background-color: $color-lightgrey;
+    color: $color-black;
+}
+.btn--peach {
+    background-color: $color-peach;
+    color: $color-white;
+}
+
+.heading2 {
+    margin-bottom: 2.4rem;
+}
+
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  body {
+      font : {
+          family: 'Jost', sans-serif;
+          size: 1.6rem;
+          weight: 400;
+      }
+    line-height: 2.6rem;
+    color: $color-black;
+
+  }
+
+h1 {
+    font : {
+        size: 4.8rem;
+        weight: 500;
+    }
+    line-height: 4.8rem;
+}
+
+h2 {
+    font: {
+        size: 4rem;
+        weight: 500;
+    }
+    line-height: 4.8rem;
+    letter-spacing: 2px;
+}
+
+h3 {
+    font : {
+        size: 2rem;
+        weight: 500;
+    }
+  line-height: 2.6rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+//header (flexbox)
+.menu {
+    margin: 6.4rem 0;
+    justify-content: space-between;
+
+    &__logo {
+        max-width: 19.5rem;
+    }
+
+    &__navigation__link {
+        font : {
+            size: 14px;
+            weight: 400;
+
+        }
+        text-decoration: none;
+        color: $color-black;
+        line-height: 14px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-left: 4rem;
+    }
+}
+
+//award wining (flexbox)
+.award-wining {
+    background: {
+        image : url(/starter-code/assets/home/desktop/image-hero-phone.png), url(/starter-code/assets/home/desktop/bg-pattern-hero-home.svg);
+        repeat: no-repeat;
+        position: 47.4rem -3rem, right bottom;
+        size: auto;
+        color: $color-peach;
+    };
+    color: $color-white;
+    border-radius: 15px;
+    padding: 0 9.5rem;
+    margin-bottom: 16rem;
+
+
+    &__container {
+        max-width: 47.5rem;
+        padding: 14.5rem 0;
+
+        &__p {
+            max-width: 44.5rem;
+            padding-top: 3.2rem;
+        }
+    }
+
+    &__image {
+        width: 47%;
+    }
+}
+
+//design flexbox
+.design {
+    color: $color-white;
+    justify-content: space-between;
+    text-transform: uppercase;
+    margin-bottom: 16rem;
+  
+
+  
+
+    &__web-design {
+        border-radius: 15px;
+        padding: 27.3rem 13.8rem;
+        text-align: center;
+        margin-right: 2.9rem;
+        background: {
+            image: url(/starter-code/assets/home/desktop/image-web-design-large1.jpg);
+            repeat: no-repeat;
+            size: cover
+            
+        };
+    }
+
+    &__container-app-graphic {
+
+        &__app-design {
+            border-radius: 15px;
+            padding: 10.7rem 14.4rem;
+            text-align: center;
+            margin-bottom: 2.3rem;
+           
+
+            background: {
+                image: url(/starter-code/assets/home/desktop/image-app-design1.jpg);
+                repeat: no-repeat;
+                size: cover
+
+    
+            };
+        }
+    
+        &__graphic-design {
+            border-radius: 15px;
+            padding: 10.7rem 9.5rem;
+            text-align: center;
+
+            background: {
+                image: url(/starter-code/assets/home/desktop/image-graphic-design1.jpg);
+                repeat: no-repeat;
+                size: cover
+
+
+            };
+        }
+
+    }
+
+}
+
+//project flexbox
+.project {
+    text-align: center;
+    margin-bottom: 16rem;
+
+    &__passionate, &__resourceful, &__friendly {
+        max-width: 35rem;
+        
+        &__heading3 {
+            margin-bottom: 3.2rem;
+        }
+    }
+
+    &__passionate__image, &__resourceful__image, &__friendly__image {
+        margin-bottom: 4.8rem;
+
+    }
+
+    &__resourceful {
+        margin: 0 3rem;
+    }
+
+}
+//talk-about flexbox
+.talk-about {
+    background-color: $color-peach;
+    color: $color-white;
+    border-radius: 15px;
+    padding: 0 9.5rem;
+    justify-content: space-between;
+
+    &__container {
+        max-width: 44.9rem;
+        padding: 3rem 0 7.2rem 0;
+
+        &__heading2 {
+            max-width: 26.8rem;
+            margin-bottom: 1.9rem;
+        }
+    }
+    
+   
+    
+    &__link {
+        align-self: center;
+    }
+}
+
+
+
