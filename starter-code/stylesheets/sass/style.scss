@@ -66,7 +66,7 @@ $color-lightgrey-opacity: rgba(241, 243, 245, .5);
 }
 
 .background {
-    background: url(/starter-code/assets/shared/desktop/bg-pattern-leaf.svg) no-repeat, url(/starter-code/assets/shared/desktop/bg-pattern-leaf-right.svg) no-repeat ;
+    background: url(assets/shared/desktop/bg-pattern-leaf.svg) no-repeat, url(assets/shared/desktop/bg-pattern-leaf-right.svg) no-repeat ;
     background-position: left 13%, right 90%;
 
 }
@@ -164,7 +164,7 @@ address {
 //award wining (flexbox)
 .award-wining {
     background: {
-        image : url(/starter-code/assets/home/desktop/image-hero-phone.png), url(/starter-code/assets/home/desktop/bg-pattern-hero-home.svg);
+        image : url(assets/home/desktop/image-hero-phone.png), url(assets/home/desktop/bg-pattern-hero-home.svg);
         repeat: no-repeat;
         position: 47.4rem -3rem, right bottom;
         size: auto;
@@ -211,7 +211,7 @@ address {
          }
 
         &:before {
-            @include beforeDesign(640px, url(/starter-code/assets/home/desktop/image-web-design-large1.jpg));
+            @include beforeDesign(640px, url(assets/home/desktop/image-web-design-large1.jpg));
 
         }
 
@@ -249,7 +249,7 @@ address {
              }
 
              &:before {
-                 @include beforeDesign(308px, url(/starter-code/assets/home/desktop/image-app-design1.jpg) );
+                 @include beforeDesign(308px, url(assets/home/desktop/image-app-design1.jpg) );
         
             }
     
@@ -280,7 +280,7 @@ address {
             }
 
             &:before {
-                @include beforeDesign(308px, url(/starter-code/assets/home/desktop/image-graphic-design1.jpg) );
+                @include beforeDesign(308px, url(assets/home/desktop/image-graphic-design1.jpg) );
 
            }
    
@@ -352,7 +352,7 @@ address {
     transform: translateY(7.2rem);
     background: {
         color: $color-peach;
-        image: url('/starter-code/assets/shared/desktop/bg-pattern-call-to-action.svg');
+        image: url('assets/shared/desktop/bg-pattern-call-to-action.svg');
         repeat: no-repeat;
         position: right center; 
     }
@@ -439,15 +439,15 @@ address {
 // PAGE WEBDESIGN
 
 .main-page-web {
-    @include main-page(right center, url(/starter-code/assets/web-design/desktop/bg-pattern-intro-web.svg));
+    @include main-page(right center, url(assets/web-design/desktop/bg-pattern-intro-web.svg));
    
 }
 .main-page-app {
-    @include main-page(left center, url(/starter-code/assets/app-design/desktop/bg-pattern-intro-app.svg));
+    @include main-page(left center, url(assets/app-design/desktop/bg-pattern-intro-app.svg));
 
 }
 .main-page-graphic {
-    @include main-page(left center, url(/starter-code/assets/graphic-design/desktop/bg-pattern-intro-graphic.svg));
+    @include main-page(left center, url(assets/graphic-design/desktop/bg-pattern-intro-graphic.svg));
 
 }
 
@@ -515,17 +515,17 @@ address {
 
    
     &__background-app {
-        @include appDesign( url(/starter-code/assets/home/desktop/image-app-design1.jpg));
+        @include appDesign( url(assets/home/desktop/image-app-design1.jpg));
        
     }
 
     &__background-graphic {
-        @include appDesign( url(/starter-code/assets/home/desktop/image-graphic-design1.jpg));
+        @include appDesign( url(assets/home/desktop/image-graphic-design1.jpg));
        
     }
 
     &__background-web {
-        @include appDesign( url(/starter-code/assets/home/desktop/image-web-design-small1.jpg));
+        @include appDesign( url(assets/home/desktop/image-web-design-small1.jpg));
        
     }
 
@@ -539,7 +539,7 @@ address {
 //about-us flexblox
 .about-us {
     background: {
-        image: url(/starter-code/assets/about/desktop/bg-pattern-hero-about-desktop.svg);
+        image: url(assets/about/desktop/bg-pattern-hero-about-desktop.svg);
         position: left bottom;
     };
     margin-bottom: 16rem;
@@ -591,7 +591,7 @@ address {
         max-width: 35rem;
         text-align: center;
         background: {
-            image: url(/starter-code/assets/about/desktop/bg-pattern-canada.svg);
+            image: url(assets/about/desktop/bg-pattern-canada.svg);
             repeat: no-repeat;
             position: top center;
         };
@@ -599,7 +599,7 @@ address {
     
     &__container:nth-child(2) {
         background: {
-            image: url(/starter-code/assets/about/desktop/bg-pattern-australia.svg);
+            image: url(assets/about/desktop/bg-pattern-australia.svg);
             repeat: no-repeat;
             position: top center;
         };
@@ -607,7 +607,7 @@ address {
 
     &__container:nth-child(2) {
         background: {
-            image: url(/starter-code/assets/about/desktop/bg-pattern-kingdom.svg);
+            image: url(assets/about/desktop/bg-pattern-kingdom.svg);
             repeat: no-repeat;
             position: top center;
         };
