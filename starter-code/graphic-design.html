@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,25 +6,166 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/starter-code/stylesheets/style.css">
   
   <title>Frontend Mentor | Designo Agency Website Challenge</title>
 </head>
 <body>
-  Our Company
-  Locations
-  Contact
+  <div class="max-container">
 
-  Graphic design
-  We deliver eye-catching branding materials that are tailored to meet your business objectives.
+  <header class="menu flexbox-row">
+    <div class="menu__logo">
+      <img src="/starter-code/assets/shared/desktop/logo-dark.png" alt="logo">
+    </div>
+    <nav class="menu__navigation">
+      <a class="menu__navigation__link" href="#">Our Company</a>
+      <a class="menu__navigation__link" href="/starter-code/locations.html">Locations</a>
+      <a class="menu__navigation__link" href="/starter-code/contact.html">Contact</a>
+    </nav>
+  </header>
+  </div>
+  <main class="background">
 
-  Tim Brown
-  A book cover designed for Tim Brown’s new release, ‘Change’
+    <section class="main-page-graphic max-container">
+      <h2 class="main-page-graphic__heading2 heading2">Graphic Design</h2>
+      <p class="main-page-graphic__para">  We deliver eye-catching branding materials that are tailored to meet your business objectives.</p>
+    </section>
 
-  Boxed water
-  A simple packaging concept made for Boxed Water
+    <div class="multi-page max-container flexbox-row">
 
-  Science!
-  A poster made in collaboration with the Federal Art Project
+      <article class="multi-page__container">
+
+          <img class="multi-page__container__image" src="/starter-code/assets/graphic-design/desktop/image-change.jpg" alt="image Tim Brown">
+        <a href="#" class="multi-page__link">
+        <div class="multi-page__description">
+          <h3 class="multi-page__description__heading3">Tim Brown</h3>
+          <p class="multi-page__description__para">A book cover designed for Tim Brown’s new release, ‘Change’</p>
+        </div>
+      </a>
+      </article>
+
+      <article class="multi-page__container space-margin">
+
+          <img class="multi-page__container__image" src="/starter-code/assets/graphic-design/desktop/image-boxed-water.jpg" alt="image boxed water">
+        <a href="#" class="multi-page__link">
+        <div class="multi-page__description">
+          <h3 class="multi-page__description__heading3">Boxed water</h3>
+          <p class="multi-page__description__para">A simple packaging concept made for Boxed Water</p>
+        </div>
+      </a>
+
+      </article>
+
+      <article class="multi-page__container">
+
+          <img class="multi-page__container__image" src="/starter-code/assets/graphic-design/desktop/image-science.jpg" alt="image science">
+        <a href="#" class="multi-page__link">
+        <div class="multi-page__description">
+          <h3 class="multi-page__description__heading3">Science!</h3>
+          <p class="multi-page__description__para">A poster made in collaboration with the Federal Art Project</p>
+        </div>
+      </a>
+
+      </article>
+  
+
+
+    </div>
+
+    <section class="design-project flexbox-row max-container">
+      <a href="/starter-code/app-design.html" class="design-project__view-projects__link">
+      <div class="design-project__background-web">
+          <div class="design__view-projects">
+            <h2 class="heading2">App Design</h2>
+            <p class="design__view-projects__para">View Projects</p>
+            <i class="fas fa-chevron-right"></i>
+          </div>
+        </div>
+      </a>
+
+      <a href="#" class="design-project__view-projects__link">
+      <div class="design-project__background-web">
+          <div class="design__view-projects">
+            <h2 class="heading2">web Design</h2>
+            <p class="design__view-projects__para">View Projects</p>
+            <i class="fas fa-chevron-right"></i>
+          </div>
+        </div>
+      </a>
+      
+    </section>
+    
+  
+    
+
+  <section class="talk-about flexbox-row max-container">
+    <div class="talk-about__container">
+    <h2 class="talk-about__container__heading2">  Let’s talk about your project</h2>
+    <p>Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow.</p>
+  </div>
+    <a href="#" class="talk-about__link btn btn--grey">Get in touch</a>
+  </section>
+</main>
+
+
+<footer class="footer">
+<div class="menu footer__menu flexbox-row max-container">
+  <div class="menu__logo">
+    <img src="/starter-code/assets/shared/desktop/logo-light.png" alt="logo">
+  </div>
+  <nav class="menu__navigation">
+    <a class="menu__navigation__link" href="#">Our Company</a>
+    <a class="menu__navigation__link" href="/starter-code/locations.html">Locations</a>
+    <a class="menu__navigation__link" href="/starter-code/contact.html">Contact</a>
+  </nav>
+</div>
+
+<div class="footer__office max-container flexbox-row">
+
+  <div class="footer__office__container flexbox-row">
+  <div class="footer__office__container__address">
+    <p>  Designo Central Office</p>
+  <address class="footer__office__container__address__street">
+    3886 Wellington Street
+  </address>
+  <address class="footer__office__container__address__street">
+    Toronto, Ontario M9C 3J5
+  </address>
+  </div>
+  
+  <div class="footer__office__container__contact">
+    <p>Contact Us (Central Office)</p>
+    <address class="footer__office__container__contact__number">
+      P : +1 253-863-8967
+    </address>
+    <address class="footer__office__container__contact__mail">
+      M : contact@designo.co
+    </address>
+  </div>
+</div>
+
+  <div class="footer__office__social">
+    <a href="#" class="footer__office__social__logo"><img src="/starter-code/assets/shared/desktop/icon-facebook.svg" alt="Logo facebook"></a>
+    <a href="#" class="footer__office__social__logo"><img src="/starter-code/assets/shared/desktop/icon-youtube.svg" alt="Logo facebook"></a>
+    <a href="#" class="footer__office__social__logo"><img src="/starter-code/assets/shared/desktop/icon-twitter.svg" alt="Logo facebook"></a>
+    <a href="#" class="footer__office__social__logo"><img src="/starter-code/assets/shared/desktop/icon-pinterest.svg" alt="Logo facebook"></a>
+    <a href="#" class="footer__office__social__logo"><img src="/starter-code/assets/shared/desktop/icon-instagram.svg" alt="Logo facebook"></a>
+  </div>
+  
+</div>
+
+ 
+</footer>
+</body>
+</html>
+
+  
+
+
+ 
 
   App Design
   View Projects
@@ -47,5 +189,3 @@
   Contact Us (Central Office)
   P : +1 253-863-8967
   M : contact@designo.co
-</body>
-</html>

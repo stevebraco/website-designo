@@ -58,6 +58,10 @@ td:not([align]), th:not([align]) {
   margin: 0 auto;
 }
 
+.space-margin {
+  margin: 0 3.8rem;
+}
+
 .btn {
   display: inline-block;
   margin-top: 4rem;
@@ -88,6 +92,15 @@ td:not([align]), th:not([align]) {
 
 .heading2 {
   margin-bottom: 2.4rem;
+}
+
+.heading2-peach {
+  color: #e7816b;
+}
+
+.background {
+  background: url(/starter-code/assets/shared/desktop/bg-pattern-leaf.svg) no-repeat, url(/starter-code/assets/shared/desktop/bg-pattern-leaf-right.svg) no-repeat;
+  background-position: left 13%, right 90%;
 }
 
 html {
@@ -128,6 +141,18 @@ h3 {
   letter-spacing: 5px;
 }
 
+figcaption {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 2.6rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+address {
+  font-style: normal;
+}
+
 .menu {
   margin: 6.4rem 0;
   justify-content: space-between;
@@ -144,6 +169,9 @@ h3 {
   letter-spacing: 2px;
   text-transform: uppercase;
   margin-left: 4rem;
+}
+.menu__navigation__link:hover {
+  border-bottom: 1px solid;
 }
 
 .award-wining {
@@ -176,33 +204,127 @@ h3 {
   margin-bottom: 16rem;
 }
 .design__web-design {
+  position: relative;
+  overflow: hidden;
   border-radius: 15px;
-  padding: 27.3rem 13.8rem;
-  text-align: center;
-  margin-right: 2.9rem;
+  transition: all 0.5s ease;
+  align-self: baseline;
+}
+.design__web-design:hover {
+  background: #e7816b;
+}
+.design__web-design:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 640px;
+  z-index: 1;
   background-image: url(/starter-code/assets/home/desktop/image-web-design-large1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  transition: all 0.5s ease;
+}
+.design__web-design:hover::before {
+  opacity: 0.3;
+}
+.design__web-design__para {
+  padding: 27rem 13.65rem;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+  color: #fff;
 }
 .design__container-app-graphic__app-design {
+  position: relative;
+  overflow: hidden;
   border-radius: 15px;
-  padding: 10.7rem 14.4rem;
-  text-align: center;
-  margin-bottom: 2.3rem;
+  transition: all 0.5s ease;
+  align-self: baseline;
+  margin-bottom: 2rem;
+}
+.design__container-app-graphic__app-design:hover {
+  background: #e7816b;
+}
+.design__container-app-graphic__app-design:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 308px;
+  z-index: 1;
   background-image: url(/starter-code/assets/home/desktop/image-app-design1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  transition: all 0.5s ease;
+}
+.design__container-app-graphic__app-design:hover::before {
+  opacity: 0.3;
+}
+.design__container-app-graphic__app-design__para {
+  padding: 10.5rem 15.5rem;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+  color: #fff;
 }
 .design__container-app-graphic__graphic-design {
+  position: relative;
+  overflow: hidden;
   border-radius: 15px;
-  padding: 10.7rem 9.5rem;
-  text-align: center;
+  transition: all 0.5s ease;
+  align-self: baseline;
+}
+.design__container-app-graphic__graphic-design:hover {
+  background: #e7816b;
+}
+.design__container-app-graphic__graphic-design:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 308px;
+  z-index: 1;
   background-image: url(/starter-code/assets/home/desktop/image-graphic-design1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  transition: all 0.5s ease;
+}
+.design__container-app-graphic__graphic-design:hover::before {
+  opacity: 0.3;
+}
+.design__container-app-graphic__graphic-design__para {
+  padding: 10.5rem 0rem;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+  color: #fff;
+}
+.design__view-projects {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 5px;
+}
+.design__view-projects__para, .design__view-projects i.fas.fa-chevron-right {
+  display: inline-block;
+}
+.design__view-projects__para {
+  margin-right: 2.1rem;
+}
+.design__view-projects i.fas.fa-chevron-right {
+  color: #e7816b;
 }
 
 .project {
+  position: relative;
   text-align: center;
   margin-bottom: 16rem;
 }
@@ -220,7 +342,11 @@ h3 {
 }
 
 .talk-about {
+  transform: translateY(7.2rem);
   background-color: #e7816b;
+  background-image: url("/starter-code/assets/shared/desktop/bg-pattern-call-to-action.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
   color: white;
   border-radius: 15px;
   padding: 0 9.5rem;
@@ -236,6 +362,240 @@ h3 {
 }
 .talk-about__link {
   align-self: center;
+}
+
+.footer {
+  background-color: #1d1c1e;
+  padding: 14.4rem 0 7.2rem 0;
+  color: rgba(241, 243, 245, 0.5);
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 26px;
+}
+.footer .menu__navigation__link {
+  color: white;
+}
+.footer__menu {
+  margin: auto;
+  border-bottom: 2px rgba(241, 243, 245, 0.5) solid;
+  padding-bottom: 3.9rem;
+}
+.footer__office {
+  justify-content: space-between;
+}
+.footer__office__container {
+  justify-content: space-between;
+  margin-top: 3.1rem;
+}
+.footer__office__container__address {
+  width: 35rem;
+}
+.footer__office__container__address__street {
+  font-weight: 500;
+}
+.footer__office__social {
+  align-self: flex-end;
+}
+.footer__office__social__logo {
+  transition: 0.5s ease;
+}
+.footer__office__social__logo:hover {
+  opacity: 0.5;
+}
+.footer__office__social__logo:not(:last-child) {
+  margin-right: 1.6rem;
+}
+
+.main-page-web {
+  background-image: url(/starter-code/assets/web-design/desktop/bg-pattern-intro-web.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-color: #e7816b;
+  margin-bottom: 16.6rem;
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+  padding: 6.4rem 0;
+}
+.main-page-web__para {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.main-page-app {
+  background-image: url(/starter-code/assets/app-design/desktop/bg-pattern-intro-app.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-color: #e7816b;
+  margin-bottom: 16.6rem;
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+  padding: 6.4rem 0;
+}
+.main-page-app__para {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.main-page-graphic {
+  background-image: url(/starter-code/assets/graphic-design/desktop/bg-pattern-intro-graphic.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-color: #e7816b;
+  margin-bottom: 16.6rem;
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+  padding: 6.4rem 0;
+}
+.main-page-graphic__para {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.multi-page {
+  margin-bottom: 16.6rem;
+}
+.multi-page__container {
+  display: flex;
+  flex-direction: column;
+  max-width: 35rem;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 3.2rem;
+}
+.multi-page__link {
+  text-decoration: none;
+}
+.multi-page__description {
+  text-align: center;
+  padding: 3.2rem;
+  background-color: rgba(255, 173, 155, 0.3);
+  transition: 0.5s ease;
+}
+.multi-page__description:hover {
+  background-color: #e7816b;
+  color: white;
+}
+.multi-page__description:hover .multi-page__description__heading3, .multi-page__description:hover .multi-page__description__para {
+  color: white;
+}
+.multi-page__description__heading3 {
+  color: #e7816b;
+  margin-bottom: 1.6rem;
+}
+.multi-page__description__para {
+  color: #1d1c1e;
+}
+
+.design-project {
+  justify-content: space-between;
+  margin-bottom: 16.6rem;
+  text-transform: uppercase;
+}
+.design-project__background-app {
+  padding: 10.5rem 0;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 54.1rem;
+  text-align: center;
+  background-image: url(/starter-code/assets/home/desktop/image-app-design1.jpg);
+  background-repeat: no-repeat;
+  transition: 0.5s ease;
+}
+.design-project__background-app:hover {
+  opacity: 0.5;
+}
+.design-project__background-graphic {
+  padding: 10.5rem 0;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 54.1rem;
+  text-align: center;
+  background-image: url(/starter-code/assets/home/desktop/image-graphic-design1.jpg);
+  background-repeat: no-repeat;
+  transition: 0.5s ease;
+}
+.design-project__background-graphic:hover {
+  opacity: 0.5;
+}
+.design-project__background-web {
+  padding: 10.5rem 0;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 54.1rem;
+  text-align: center;
+  background-image: url(/starter-code/assets/home/desktop/image-web-design-small1.jpg);
+  background-repeat: no-repeat;
+  transition: 0.5s ease;
+}
+.design-project__background-web:hover {
+  opacity: 0.5;
+}
+.design-project__view-projects__link {
+  text-decoration: none;
+}
+
+.about-us {
+  background-image: url(/starter-code/assets/about/desktop/bg-pattern-hero-about-desktop.svg);
+  background-position: left bottom;
+  margin-bottom: 16rem;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #e7816b;
+  color: white;
+  justify-content: space-between;
+}
+.about-us__article {
+  max-width: 65rem;
+  padding: 13.5rem 0 0 9.5rem;
+}
+.about-us__para {
+  max-width: 45.8rem;
+}
+
+.world-class {
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: rgba(255, 173, 155, 0.3);
+  margin-bottom: 16rem;
+}
+.world-class__image {
+  border: 1px rgba(255, 173, 155, 0.3) solid;
+}
+.world-class__article {
+  max-width: 53.4rem;
+  padding: 15.4rem 0 0 9.4rem;
+}
+.world-class__article__para {
+  margin-bottom: 2rem;
+}
+
+.city {
+  justify-content: space-around;
+  margin-bottom: 16rem;
+}
+.city__container {
+  max-width: 35rem;
+  text-align: center;
+  background-image: url(/starter-code/assets/about/desktop/bg-pattern-canada.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.city__container:nth-child(2) {
+  background-image: url(/starter-code/assets/about/desktop/bg-pattern-australia.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.city__container:nth-child(2) {
+  background-image: url(/starter-code/assets/about/desktop/bg-pattern-kingdom.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.real-deal {
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=style.css.map */

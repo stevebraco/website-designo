@@ -1,20 +1,30 @@
 @import '../sass/reset.scss';
+@import '../sass/mixin.scss';
 
 $color-peach: rgba(231, 129, 107, 1);
+$color-peach-opacity: rgba(231, 129, 107, .5);
 $color-lightpeach: rgba(255, 173, 155, 1);
+$color-lightpeach-opacity: rgba(255, 173, 155, .3);
 $color-black: rgba(29, 28, 30, 1);
 $color-darkgrey: rgba(51, 49, 54, 1);
 $color-white: rgba(255, 255, 255, 1);
 $color-lightgrey: rgba(241, 243, 245, 1);
+$color-lightgrey-opacity: rgba(241, 243, 245, .5);
 
 .flexbox-row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
+
+
 .max-container {
     max-width: 1126px;
     margin: 0 auto;
+}
+
+.space-margin {
+    margin: 0 3.8rem;
 }
 
 .btn {
@@ -49,6 +59,16 @@ $color-lightgrey: rgba(241, 243, 245, 1);
 
 .heading2 {
     margin-bottom: 2.4rem;
+}
+
+.heading2-peach {
+    color: $color-peach;
+}
+
+.background {
+    background: url(/starter-code/assets/shared/desktop/bg-pattern-leaf.svg) no-repeat, url(/starter-code/assets/shared/desktop/bg-pattern-leaf-right.svg) no-repeat ;
+    background-position: left 13%, right 90%;
+
 }
 
 
@@ -97,10 +117,24 @@ h3 {
   letter-spacing: 5px;
 }
 
+figcaption {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.6rem;
+    // text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+address {
+    font-style: normal;
+}
+
 //header (flexbox)
 .menu {
     margin: 6.4rem 0;
     justify-content: space-between;
+
 
     &__logo {
         max-width: 19.5rem;
@@ -118,7 +152,13 @@ h3 {
         letter-spacing: 2px;
         text-transform: uppercase;
         margin-left: 4rem;
+
+        &:hover {
+            border-bottom: 1px solid;
+        }
     }
+
+   
 }
 
 //award wining (flexbox)
@@ -134,7 +174,6 @@ h3 {
     border-radius: 15px;
     padding: 0 9.5rem;
     margin-bottom: 16rem;
-
 
     &__container {
         max-width: 47.5rem;
@@ -157,61 +196,136 @@ h3 {
     justify-content: space-between;
     text-transform: uppercase;
     margin-bottom: 16rem;
-  
 
-  
+    
 
     &__web-design {
+        position: relative;
+        overflow: hidden;
         border-radius: 15px;
-        padding: 27.3rem 13.8rem;
-        text-align: center;
-        margin-right: 2.9rem;
-        background: {
-            image: url(/starter-code/assets/home/desktop/image-web-design-large1.jpg);
-            repeat: no-repeat;
-            size: cover
-            
-        };
+        transition: all .5s ease;
+        align-self: baseline;
+
+         &:hover {
+             background: $color-peach;
+         }
+
+        &:before {
+            @include beforeDesign(640px, url(/starter-code/assets/home/desktop/image-web-design-large1.jpg));
+
+        }
+
+        &:hover::before {
+            opacity: .3;
+        }
+       
+
+        &__para {
+            padding: 27rem 13.65rem ;
+            text-align: center;
+            z-index: 2;
+            position: relative;
+            color: #fff;
+        }
+       
     }
+    
+   
 
     &__container-app-graphic {
 
         &__app-design {
+
+            position: relative;
+            overflow: hidden;
             border-radius: 15px;
-            padding: 10.7rem 14.4rem;
-            text-align: center;
-            margin-bottom: 2.3rem;
-           
-
-            background: {
-                image: url(/starter-code/assets/home/desktop/image-app-design1.jpg);
-                repeat: no-repeat;
-                size: cover
-
+            transition: all .5s ease;
+            align-self: baseline;
+            margin-bottom: 2rem;
+            
     
-            };
+             &:hover {
+                 background: $color-peach;
+             }
+
+             &:before {
+                 @include beforeDesign(308px, url(/starter-code/assets/home/desktop/image-app-design1.jpg) );
+        
+            }
+    
+            &:hover::before {
+                opacity: .3;
+            }
+
+            &__para {
+                padding: 10.5rem 15.5rem ;
+                text-align: center;
+                z-index: 2;
+                position: relative;
+                color: #fff;
+            }
+
+         
         }
     
         &__graphic-design {
+            position: relative;
+            overflow: hidden;
             border-radius: 15px;
-            padding: 10.7rem 9.5rem;
-            text-align: center;
+            transition: all .5s ease;
+            align-self: baseline;
 
-            background: {
-                image: url(/starter-code/assets/home/desktop/image-graphic-design1.jpg);
-                repeat: no-repeat;
-                size: cover
+            &:hover {
+                background: $color-peach;
+            }
 
+            &:before {
+                @include beforeDesign(308px, url(/starter-code/assets/home/desktop/image-graphic-design1.jpg) );
 
-            };
+           }
+   
+           &:hover::before {
+               opacity: .3;
+           }
+
+           &__para {
+               padding: 10.5rem 0rem ;
+               text-align: center;
+               z-index: 2;
+               position: relative;
+               color: #fff;
+           }
+           
         }
 
+    }
+
+    &__view-projects {
+        color: white;
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: 500;
+        letter-spacing: 5px;
+    
+        &__para, & i.fas.fa-chevron-right {
+            display: inline-block;
+        }
+    
+        &__para {
+            margin-right: 2.1rem;
+        }
+    
+        & i.fas.fa-chevron-right {
+            color: $color-peach;
+        }
+      
     }
 
 }
 
 //project flexbox
 .project {
+    position: relative;
     text-align: center;
     margin-bottom: 16rem;
 
@@ -235,7 +349,13 @@ h3 {
 }
 //talk-about flexbox
 .talk-about {
-    background-color: $color-peach;
+    transform: translateY(7.2rem);
+    background: {
+        color: $color-peach;
+        image: url('/starter-code/assets/shared/desktop/bg-pattern-call-to-action.svg');
+        repeat: no-repeat;
+        position: right center; 
+    }
     color: $color-white;
     border-radius: 15px;
     padding: 0 9.5rem;
@@ -258,5 +378,242 @@ h3 {
     }
 }
 
+//footer flexbox
+.footer {
+    background-color: $color-black;
+    padding: 14.4rem 0 7.2rem 0;
+    color: $color-lightgrey-opacity;
+    font: {
+        size: 1.6rem;
+        weight: 700;
+    }
+    line-height: 26px;
 
 
+    .menu__navigation__link {
+        color: $color-white;
+    }
+   
+     &__menu {
+         margin: auto;
+         border-bottom: 2px $color-lightgrey-opacity solid;
+         padding-bottom: 3.9rem;
+     }
+
+     &__office {
+        justify-content: space-between;
+
+     &__container {
+         justify-content: space-between;
+         margin-top: 3.1rem;
+
+         &__address {
+             width: 35rem;
+         }
+
+        &__address__street {
+            font-weight: 500;
+        }
+    }
+
+
+        &__social {
+            align-self: flex-end;
+
+            &__logo {
+                transition: .5s ease;
+            }
+
+            &__logo:hover {
+                opacity: .5;
+            }
+
+           &__logo:not(:last-child) {
+                margin-right: 1.6rem;
+            }
+        }
+    }
+     }
+
+ 
+// PAGE WEBDESIGN
+
+.main-page-web {
+    @include main-page(right center, url(/starter-code/assets/web-design/desktop/bg-pattern-intro-web.svg));
+   
+}
+.main-page-app {
+    @include main-page(left center, url(/starter-code/assets/app-design/desktop/bg-pattern-intro-app.svg));
+
+}
+.main-page-graphic {
+    @include main-page(left center, url(/starter-code/assets/graphic-design/desktop/bg-pattern-intro-graphic.svg));
+
+}
+
+//multi-page flexbox
+.multi-page {
+    // justify-content: space-between;
+    margin-bottom: 16.6rem;
+
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        max-width: 35rem;
+        border-radius: 15px;
+        overflow: hidden;
+        margin-bottom: 3.2rem;
+      
+
+        
+    }
+
+    &__link {
+        text-decoration: none;
+       
+    }
+
+
+    &__description {
+        text-align: center;
+        padding: 3.2rem;
+        background-color: $color-lightpeach-opacity;
+        transition: .5s ease;
+
+        &:hover {
+            background-color: $color-peach;
+            color: $color-white;
+        }
+
+       
+
+        &:hover &__heading3, &:hover &__para {
+            color: white;
+        }
+
+        &__heading3 {
+            color: $color-peach;
+            margin-bottom: 1.6rem;
+            
+        }
+        &__para {
+            color: $color-black;
+        }
+    }
+}
+
+
+//view project flexbox
+.design-project {
+
+    justify-content: space-between;
+    margin-bottom: 16.6rem;
+    text-transform: uppercase;
+
+    
+
+   
+    &__background-app {
+        @include appDesign( url(/starter-code/assets/home/desktop/image-app-design1.jpg));
+       
+    }
+
+    &__background-graphic {
+        @include appDesign( url(/starter-code/assets/home/desktop/image-graphic-design1.jpg));
+       
+    }
+
+    &__background-web {
+        @include appDesign( url(/starter-code/assets/home/desktop/image-web-design-small1.jpg));
+       
+    }
+
+
+
+    &__view-projects__link {
+        text-decoration: none;
+    }
+}
+
+//about-us flexblox
+.about-us {
+    background: {
+        image: url(/starter-code/assets/about/desktop/bg-pattern-hero-about-desktop.svg);
+        position: left bottom;
+    };
+    margin-bottom: 16rem;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: $color-peach;
+    color: white;
+    justify-content: space-between;
+
+    &__article {
+        max-width: 65rem;
+        padding: 13.5rem 0 0 9.5rem;
+    }
+
+    &__para {
+        max-width: 45.8rem;
+    }
+}
+
+//worldclass flexbox 
+.world-class {
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: $color-lightpeach-opacity;
+    margin-bottom: 16rem;
+
+    &__image {
+        border: 1px $color-lightpeach-opacity solid;
+    }
+
+    &__article {
+        max-width: 53.4rem;
+        padding: 15.4rem 0 0 9.4rem;
+
+        &__para {
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+//city
+.city {
+
+    justify-content: space-around;
+    margin-bottom: 16rem;
+
+
+    &__container {
+        max-width: 35rem;
+        text-align: center;
+        background: {
+            image: url(/starter-code/assets/about/desktop/bg-pattern-canada.svg);
+            repeat: no-repeat;
+            position: top center;
+        };
+    }
+    
+    &__container:nth-child(2) {
+        background: {
+            image: url(/starter-code/assets/about/desktop/bg-pattern-australia.svg);
+            repeat: no-repeat;
+            position: top center;
+        };
+    }
+
+    &__container:nth-child(2) {
+        background: {
+            image: url(/starter-code/assets/about/desktop/bg-pattern-kingdom.svg);
+            repeat: no-repeat;
+            position: top center;
+        };
+    }
+}
+
+.real-deal {
+    justify-content: space-between;
+}

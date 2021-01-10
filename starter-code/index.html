@@ -1,123 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/starter-code/stylesheets/style.css">
-  
-  <title>Frontend Mentor | Designo Agency Website Challenge</title>
-</head>
-<body>
-  <div class="max-container">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="/starter-code/stylesheets/style.css" />
 
-  <header class="menu flexbox-row">
-    <div class="menu__logo">
-      <img src="/starter-code/assets/shared/desktop/logo-dark.png" alt="logo">
+    <title>Frontend Mentor | Designo Agency Website Challenge</title>
+  </head>
+  <body>
+    <div class="max-container">
+      <header class="menu flexbox-row">
+        <div class="menu__logo">
+          <img
+            src="/starter-code/assets/shared/desktop/logo-dark.png"
+            alt="logo"
+          />
+        </div>
+        <nav class="menu__navigation">
+          <a class="menu__navigation__link" href="/starter-code/about.html">Our Company</a>
+          <a class="menu__navigation__link" href="/starter-code/locations.html"
+            >Locations</a
+          >
+          <a class="menu__navigation__link" href="/starter-code/contact.html"
+            >Contact</a
+          >
+        </nav>
+      </header>
     </div>
-    <nav class="menu__navigation">
-      <a class="menu__navigation__link" href="#">Our Company</a>
-      <a class="menu__navigation__link" href="/starter-code/locations.html">Locations</a>
-      <a class="menu__navigation__link" href="/starter-code/contact.html">Contact</a>
-    </nav>
-  </header>
-  <main>
-    <section class="award-wining">
-      <article class="award-wining__container">
-        <h1 class="award-wining__container__heading1">Award-winning custom designs and digital branding solutions</h1>
-        <p class="award-wining__container__p">With over 10 years in the industry, we are experienced in creating fully responsive websites, app design, 
-          and engaging brand experiences. Find out more about our services.</p>
+    <main class="background">
+      <div class="award-wining max-container">
+        <section class="award-wining__container">
+          <h1 class="award-wining__container__heading1">
+            Award-winning custom designs and digital branding solutions
+          </h1>
+          <p class="award-wining__container__p">
+            With over 10 years in the industry, we are experienced in creating
+            fully responsive websites, app design, and engaging brand
+            experiences. Find out more about our services.
+          </p>
           <a href="#" class="btn btn--grey">Learn more</a>
-      </article>
-      <!-- <figure class="award-wining__image">
+        </section>
+        <!-- <figure class="award-wining__image">
         <img src="/starter-code/assets/home/desktop/image-hero-phone.png" alt="">
       </figure> -->
-    </section>
+      </div>
 
-    <section class="design flexbox-row">
-      <article class="design__web-design">
-        <h2 class="heading2" >Web Design</h2>
-        <p>View Projects</p>
-      </article>
-      <div class="design__container-app-graphic">
-      <article class="design__container-app-graphic__app-design">
-        <h2 class="heading2" >App Design</h2>
-        <p>View Projects</p>
-      </article>
-      <article class="design__container-app-graphic__graphic-design">
-        <h2 class="heading2" >Graphic Design</h2>
-        <p>View Projects</p>
-      </article>
-    </div>
-    </section>
+      <div class="design flexbox-row max-container">
+        <article class="design__web-design">
+          <a href="/starter-code/web-design.html" class="design__view-projects">
+            <div class="design__web-design__para">
+              <h2 class="heading2">Web Design</h2>
+              <p class="design__view-projects__para">View Projects</p>
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </a>
+        </article>
 
-    <section class="project flexbox-row">
+        <div class="design__container-app-graphic">
+          <article class="design__container-app-graphic__app-design">
+            <a href="/starter-code/app-design.html" class="design__view-projects">
+              <div class="design__container-app-graphic__app-design__para">
+                <h2 class="heading2">App Design</h2>
+                <p class="design__view-projects__para">View Projects</p>
+                <i class="fas fa-chevron-right"></i>
+              </div>
+            </a>
+          </article>
 
-      <article class="project__passionate">
-        <figure class="project__passionate__image" >
-          <img src="/starter-code/assets/home/desktop/illustration-passionate.svg" alt="illustration passionate" srcset="">
-        </figure>
+          <article class="design__container-app-graphic__graphic-design">
+            <a href="/starter-code/graphic-design.html" class="design__view-projects">
+              <div class="design__container-app-graphic__graphic-design__para">
+                <h2 class="heading2">Graphic Design</h2>
+                <p class="design__view-projects__para">View Projects</p>
+                <i class="fas fa-chevron-right"></i>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+
+      <div class="project flexbox-row max-container">
+        <article class="project__passionate">
+          <figure class="project__passionate__image">
+            <img
+              src="/starter-code/assets/home/desktop/illustration-passionate.svg"
+              alt="illustration passionate"
+            />
+          </figure>
           <h3 class="project__passionate__heading3">Passionate</h3>
-          <p>Each project starts with an in-depth brand research to ensure we only create products that serve a purpose. We merge
-            art, design, and technology into exciting new solutions.</p>
-      </article>
+          <p>
+            Each project starts with an in-depth brand research to ensure we
+            only create products that serve a purpose. We merge art, design, and
+            technology into exciting new solutions.
+          </p>
+        </article>
 
-      <article class="project__resourceful">
-        <figure class="project__resourceful__image" >
-          <img src="/starter-code/assets/home/desktop/illustration-resourceful.svg" alt="illustration Resourceful" srcset="">
-        </figure>
+        <article class="project__resourceful">
+          <figure class="project__resourceful__image">
+            <img
+              src="/starter-code/assets/home/desktop/illustration-resourceful.svg"
+              alt="illustration Resourceful"
+            />
+          </figure>
           <h3 class="project__resourceful__heading3">Resourceful</h3>
-          <p>Everything that we do has a strategic purpose. We use an agile approach in all of our projects and value customer
-            collaboration. It guarantees superior results that fulfill our clients’ needs.</p>
-      </article>
+          <p>
+            Everything that we do has a strategic purpose. We use an agile
+            approach in all of our projects and value customer collaboration. It
+            guarantees superior results that fulfill our clients’ needs.
+          </p>
+        </article>
 
-      <article class="project__friendly">
-        <figure class="project__friendly__image" >
-          <img src="/starter-code/assets/home/desktop/illustration-friendly.svg" alt="illustration Friendly" srcset="">
-        </figure>
+        <article class="project__friendly">
+          <figure class="project__friendly__image">
+            <img
+              src="/starter-code/assets/home/desktop/illustration-friendly.svg"
+              alt="illustration Friendly"
+            />
+          </figure>
           <h3 class="project__friendly__heading3">Friendly</h3>
-          <p>We are a group of enthusiastic folks who know how to put people first. Our success depends on our customers, and we
-            strive to give them the best experience a company can provide.</p>
-      </article>
-    </section>
+          <p>
+            We are a group of enthusiastic folks who know how to put people
+            first. Our success depends on our customers, and we strive to give
+            them the best experience a company can provide.
+          </p>
+        </article>
+      </div>
 
-    <section class="talk-about flexbox-row">
-      <div class="talk-about__container">
-      <h2 class="talk-about__container__heading2">  Let’s talk about your project</h2>
-      <p>Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow.</p>
-    </div>
-      <a href="#" class="talk-about__link btn btn--grey">Get in touch</a>
-    </section>
-  </div>
-  </main>
- 
+      <section class="talk-about flexbox-row max-container">
+        <div class="talk-about__container">
+          <h2 class="talk-about__container__heading2">
+            Let’s talk about your project
+          </h2>
+          <p>
+            Ready to take it to the next level? Contact us today and find out
+            how our expertise can help your business grow.
+          </p>
+        </div>
+        <a href="#" class="talk-about__link btn btn--grey">Get in touch</a>
+      </section>
+    </main>
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  Our company
-  Locations
-  Contact
-  
-  Designo Central Office
-  3886 Wellington Street
-  Toronto, Ontario M9C 3J5
-  
-  Contact Us (Central Office)
-  P : +1 253-863-8967
-  M : contact@designo.co
-</body>
+    <footer class="footer">
+      <div class="menu footer__menu flexbox-row max-container">
+        <div class="menu__logo">
+          <img
+            src="/starter-code/assets/shared/desktop/logo-light.png"
+            alt="logo"
+          />
+        </div>
+        <nav class="menu__navigation">
+          <a class="menu__navigation__link" href="/starter-code/about.html">Our Company</a>
+          <a class="menu__navigation__link" href="/starter-code/locations.html"
+            >Locations</a
+          >
+          <a class="menu__navigation__link" href="/starter-code/contact.html"
+            >Contact</a
+          >
+        </nav>
+      </div>
+
+      <div class="footer__office max-container flexbox-row">
+        <div class="footer__office__container flexbox-row">
+          <div class="footer__office__container__address">
+            <p>Designo Central Office</p>
+            <address class="footer__office__container__address__street">
+              3886 Wellington Street
+            </address>
+            <address class="footer__office__container__address__street">
+              Toronto, Ontario M9C 3J5
+            </address>
+          </div>
+
+          <div class="footer__office__container__contact">
+            <p>Contact Us (Central Office)</p>
+            <address class="footer__office__container__contact__number">
+              P : +1 253-863-8967
+            </address>
+            <address class="footer__office__container__contact__mail">
+              M : contact@designo.co
+            </address>
+          </div>
+        </div>
+
+        <div class="footer__office__social">
+          <a href="#" class="footer__office__social__logo"
+            ><img
+              src="/starter-code/assets/shared/desktop/icon-facebook.svg"
+              alt="Logo facebook"
+          /></a>
+          <a href="#" class="footer__office__social__logo"
+            ><img
+              src="/starter-code/assets/shared/desktop/icon-youtube.svg"
+              alt="Logo facebook"
+          /></a>
+          <a href="#" class="footer__office__social__logo"
+            ><img
+              src="/starter-code/assets/shared/desktop/icon-twitter.svg"
+              alt="Logo facebook"
+          /></a>
+          <a href="#" class="footer__office__social__logo"
+            ><img
+              src="/starter-code/assets/shared/desktop/icon-pinterest.svg"
+              alt="Logo facebook"
+          /></a>
+          <a href="#" class="footer__office__social__logo"
+            ><img
+              src="/starter-code/assets/shared/desktop/icon-instagram.svg"
+              alt="Logo facebook"
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

@@ -1,66 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Designo Agency Website Challenge</title>
-</head>
-<body>
-  Our Company
-  Locations
-  Contact
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/starter-code/stylesheets/style.css" />
 
-  About us
-  Founded in 2010, we are a creative agency that produces lasting results for our clients. 
-  We’ve partnered with many startups, corporations, and nonprofits alike to craft designs 
-  that make real impact. We’re always looking forward to creating brands, products, and 
-  digital experiences that connect with our clients' audiences.
+    <title>Frontend Mentor | Designo Agency Website Challenge</title>
+  </head>
+  <body>
+    <div class="max-container">
+      <header class="menu flexbox-row">
+        <div class="menu__logo">
+          <img
+            src="/starter-code/assets/shared/desktop/logo-dark.png"
+            alt="logo"
+          />
+        </div>
+        <nav class="menu__navigation">
+          <a class="menu__navigation__link" href="#">Our Company</a>
+          <a class="menu__navigation__link" href="/starter-code/locations.html"
+            >Locations</a
+          >
+          <a class="menu__navigation__link" href="/starter-code/contact.html"
+            >Contact</a
+          >
+        </nav>
+      </header>
+    </div>
+    <main class="background">
+      <section class="about-us flexbox-row max-container">
+        <div class="about-us__article">
+          <h2>About Us</h2>
+          <p class="about-us__para">Founded in 2010, we are a creative agency that produces lasting results for our clients. 
+            We’ve partnered with many startups, corporations, and nonprofits alike to craft designs 
+            that make real impact. We’re always looking forward to creating brands, products, and 
+            digital experiences that connect with our clients' audiences.</p>
+        </div>
+          <img src="/starter-code/assets/about/desktop/image-about-hero.jpg" alt="image about hero">
+      </section>
 
-  World-class talent
-  We are a crew of strategists, problem-solvers, and technologists. Every design is thoughtfully 
-  crafted from concept to launch, ensuring success in its given market. We are constantly updating 
-  our skills in a myriad of platforms.
+      <section class="world-class flexbox-row max-container">
+        <img class="world-class__image" src="/starter-code/assets/about/desktop/image-world-class-talent.jpg" alt="image wordlclass">
+        <div class="world-class__article">
+          <h2 class="heading2-peach heading2">World-class talent</h2>
+          <p class="world-class__article__para">We are a crew of strategists, problem-solvers, and technologists. Every design is thoughtfully 
+            crafted from concept to launch, ensuring success in its given market. We are constantly updating 
+            our skills in a myriad of platforms.</p>
+            <p>Our team is multi-disciplinary and we are not merely interested in form — content and meaning 
+              are just as important. We give great importance to craftsmanship, service, and prompt delivery. 
+              Clients have always been impressed with our high-quality outcomes that encapsulates their 
+              brand’s story and mission.</p>
+        </div>
+      </section>
 
-  Our team is multi-disciplinary and we are not merely interested in form — content and meaning 
-  are just as important. We give great importance to craftsmanship, service, and prompt delivery. 
-  Clients have always been impressed with our high-quality outcomes that encapsulates their 
-  brand’s story and mission.
+      <div class="city max-container flexbox-row">
 
-  The real deal
-  As strategic partners in our clients’ businesses, we are ready to take on any challenge as our own.
-  Solving real problems require empathy and collaboration, and we strive to bring a fresh perspective to every
-  opportunity. We make design and technology more accessible and give you tools to measure success.
+        <div class="city__container">
+        <figure>
+          <img class="city__container__image" src="/starter-code/assets/shared/desktop/illustration-canada.svg" alt="illustration Canada">
+          
+          <figcaption>Canada</figcaption>
+        </figure>
+        <a href="#" class="btn btn--peach">see location</a>
+      </div>
 
-  We are visual storytellers in appealing and captivating ways. By combining business and marketing strategies, 
-  we inspire audiences to take action and drive real results.
+        <div class="city__container">
+        <figure>
+          <img class="city__container__image" src="/starter-code/assets/shared/desktop/illustration-australia.svg" alt="illustration Australia">
+          
+          <figcaption>Australia</figcaption>
+        </figure>
+        <a href="#" class="btn btn--peach">see location</a>
+      </div>
 
-  Canada
-  See location
+      <div class="city__container">
+        <figure>
+          <img class="city__container__image" src="/starter-code/assets/shared/desktop/illustration-australia.svg" alt="illustration Australia">
+          
+          <figcaption> United Kingdom</figcaption>
+        </figure>
+        <a href="#" class="btn btn--peach">see location</a>
+      </div>
 
-  Australia
-  See location
+    </div>
 
-  United Kingdom
-  See location
+    <section class="world-class real-deal flexbox-row max-container">
+      <div class="world-class__article">
+        <h2 class="heading2-peach heading2">The real deal</h2>
+        <p class="world-class__article__para">As strategic partners in our clients’ businesses, we are ready to take on any challenge as our own.
+          Solving real problems require empathy and collaboration, and we strive to bring a fresh perspective to every
+          opportunity. We make design and technology more accessible and give you tools to measure success.</p>
+          <p> We are visual storytellers in appealing and captivating ways. By combining business and marketing strategies, 
+            we inspire audiences to take action and drive real results.</p>
+      </div>
+      <img class="world-class__image" src="/starter-code/assets/about/desktop/image-real-deal.jpg" alt="image real deal">
 
-  Let’s talk about your project
-  Ready to take it to the next level? Contact us today and find out how our expertise can 
-  help your business grow.
-  Get in touch
+    </section>
 
-  Our company
-  Locations
-  Contact
 
-  Designo Central Office
-  3886 Wellington Street
-  Toronto, Ontario M9C 3J5
 
-  Contact Us (Central Office)
-  P : +1 253-863-8967
-  M : contact@designo.co
-</body>
+
+      <section class="talk-about flexbox-row max-container">
+        <div class="talk-about__container">
+          <h2 class="talk-about__container__heading2">
+            Let’s talk about your project
+          </h2>
+          <p>
+            Ready to take it to the next level? Contact us today and find out
+            how our expertise can help your business grow.
+          </p>
+        </div>
+        <a href="#" class="talk-about__link btn btn--grey">Get in touch</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="menu footer__menu flexbox-row max-container">
+        <div class="menu__logo">
+          <img
+            src="/starter-code/assets/shared/desktop/logo-light.png"
+            alt="logo"
+          />
+        </div>
+        <nav class="menu__navigation">
+          <a class="menu__navigation__link" href="#">Our Company</a>
+          <a class="menu__navigation__link" href="/starter-code/locations.html"
+            >Locations</a
+          >
+          <a class="menu__navigation__link" href="/starter-code/contact.html"
+            >Contact</a
+          >
+        </nav>
+      </div>
+
+      <div class="footer__office max-container flexbox-row">
+        <div class="footer__office__container flexbox-row">
+          <div class="footer__office__container__address">
+            <p>Designo Central Office</p>
+            <address class="footer__office__container__address__street">
+              3886 Wellington Street
+            </address>
+            <address class="footer__office__container__address__street">
+              Toronto, Ontario M9C 3J5
+            </address>
+          </div>
+
+          <div class="footer__office__container__contact">
+            <p>Contact Us (Central Office)</p>
+            <address class="footer__office__container__contact__number">
+              P : +1 253-863-8967
+            </address>
+            <address class="footer__office__container__contact__mail">
+              M : contact@designo.co
+            </address>
+          </div>
+        </div>
+
+        <div class="footer__office__social">
+          <a href="#" class="footer__office__social__logo"
+            ><img
+              src="/starter-code/assets/shared/desktop/icon-facebook.svg"
+              alt="Logo facebook"
+          /></a>
+          <a href="#" class="footer__office__social__logo"
+            ><img
+              src="/starter-code/assets/shared/desktop/icon-youtube.svg"
+              alt="Logo facebook"
+          /></a>
+          <a href="#" class="footer__office__social__logo"
+            ><img
+              src="/starter-code/assets/shared/desktop/icon-twitter.svg"
+              alt="Logo facebook"
+          /></a>
+          <a href="#" class="footer__office__social__logo"
+            ><img
+              src="/starter-code/assets/shared/desktop/icon-pinterest.svg"
+              alt="Logo facebook"
+          /></a>
+          <a href="#" class="footer__office__social__logo"
+            ><img
+              src="/starter-code/assets/shared/desktop/icon-instagram.svg"
+              alt="Logo facebook"
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
+  

@@ -5,56 +5,195 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/starter-code/stylesheets/style.css">
   
   <title>Frontend Mentor | Designo Agency Website Challenge</title>
 </head>
 <body>
-  Our Company
-  Locations
-  Contact
+  <div class="max-container">
 
-  Web design
-  We build websites that serve as powerful marketing tools and bring memorable brand experiences.
+  <header class="menu flexbox-row">
+    <div class="menu__logo">
+      <img src="/starter-code/assets/shared/desktop/logo-dark.png" alt="logo">
+    </div>
+    <nav>
+      <a class="menu__navigation__link" href="#">Our Company</a>
+      <a class="menu__navigation__link" href="/starter-code/locations.html">Locations</a>
+      <a class="menu__navigation__link" href="/starter-code/contact.html">Contact</a>
+    </nav>
+  </header>
+  </div>
+  <main class="background">
+
+    <section class="main-page-web max-container">
+      <h2 class="heading2">Web Design</h2>
+      <p class="main-page-web__para">    We build websites that serve as powerful marketing tools and bring memorable brand experiences.</p>
+    </section>
+
+    <div class="multi-page max-container flexbox-row">
+
+      <article class="multi-page__container">
+
+          <img  src="/starter-code/assets/web-design/desktop/image-express.jpg" alt="image express">
+        <a href="#" class="multi-page__link">
+        <div class="multi-page__description">
+          <h3 class="multi-page__description__heading3">Express</h3>
+          <p class="multi-page__description__para">A multi-carrier shipping website for ecommerce businesses</p>
+        </div>
+      </a>
+
+      </article>
+
+      <article class="multi-page__container space-margin">
+
+          <img  src="/starter-code/assets/web-design/desktop/image-transfer.jpg" alt="image transfer">
+        <a href="#" class="multi-page__link">
+        <div class="multi-page__description">
+          <h3 class="multi-page__description__heading3">Transfer</h3>
+          <p class="multi-page__description__para">Site for low-cost money transfers and sending money within secondss</p>
+        </div>
+      </a>
+
+      </article>
+
+      <article class="multi-page__container">
+
+          <img  src="/starter-code/assets/web-design/desktop/image-photon.jpg" alt="image photon">
+        <a href="#" class="multi-page__link">
+        <div class="multi-page__description">
+          <h3 class="multi-page__description__heading3">Photon</h3>
+          <p class="multi-page__description__para">A state-of-the-art music player with high-resolution audio and DSP effects</p>
+        </div>
+      </a>
+
+      </article>
+
+      <article class="multi-page__container">
+
+          <img  src="/starter-code/assets/web-design/desktop/image-builder.jpg" alt="image builder">
+        <a href="#" class="multi-page__link">
+        <div class="multi-page__description">
+          <h3 class="multi-page__description__heading3">Builder</h3>
+          <p class="multi-page__description__para">Connects users with local contractors based on their location</p>
+        </div>
+      </a>
+
+      </article>
+
+      <article class="multi-page__container space-margin">
+
+          <img  src="/starter-code/assets/web-design/desktop/image-blogr.jpg" alt="image blogr">
+        <a href="#" class="multi-page__link">
+        <div class="multi-page__description">
+          <h3 class="multi-page__description__heading3">Blogr</h3>
+          <p class="multi-page__description__para">Blogr is a platform for creating an online blog or publication</p>
+        </div>
+      </a>
+
+      </article>
+
+      <article class="multi-page__container">
+
+          <img  src="/starter-code/assets/web-design/desktop/image-camp.jpg" alt="image camp">
+        <a href="#" class="multi-page__link">
+        <div class="multi-page__description">
+          <h3 class="multi-page__description__heading3">Camp</h3>
+          <p class="multi-page__description__para">Get expert training in coding, data, design, and digital marketing</p>
+        </div>
+      </a>
+
+      </article>
+
+    </div>
+
+    <section class="design-project flexbox-row max-container">
+      <a href="/starter-code/app-design.html" class="design-project__view-projects__link">
+      <div class="design-project__background-app">
+          <div class="design__view-projects">
+            <h2 class="heading2">App Design</h2>
+            <p class="design__view-projects__para">View Projects</p>
+            <i class="fas fa-chevron-right"></i>
+          </div>
+        </div>
+      </a>
+
+      <a href="/starter-code/graphic-design.html" class="design-project__view-projects__link">
+      <div class="design-project__background-graphic">
+          <div class="design__view-projects">
+            <h2 class="heading2">web Design</h2>
+            <p class="design__view-projects__para">View Projects</p>
+            <i class="fas fa-chevron-right"></i>
+          </div>
+        </div>
+      </a>
+      
+    </section>
+    
   
-  Express
-  A multi-carrier shipping website for ecommerce businesses
+    
 
-  Transfer
-  Site for low-cost money transfers and sending money within seconds
+  <section class="talk-about flexbox-row max-container">
+    <div class="talk-about__container">
+    <h2 class="talk-about__container__heading2">  Let’s talk about your project</h2>
+    <p>Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow.</p>
+  </div>
+    <a href="#" class="talk-about__link btn btn--grey">Get in touch</a>
+  </section>
+</main>
 
-  Photon
-  A state-of-the-art music player with high-resolution audio and DSP effects
 
-  Builder
-  Connects users with local contractors based on their location
+<footer class="footer">
+<div class="menu footer__menu flexbox-row max-container">
+  <div class="menu__logo">
+    <img src="/starter-code/assets/shared/desktop/logo-light.png" alt="logo">
+  </div>
+  <nav>
+    <a class="menu__navigation__link" href="#">Our Company</a>
+    <a class="menu__navigation__link" href="/starter-code/locations.html">Locations</a>
+    <a class="menu__navigation__link" href="/starter-code/contact.html">Contact</a>
+  </nav>
+</div>
 
-  Blogr
-  Blogr is a platform for creating an online blog or publication
+<div class="footer__office max-container flexbox-row">
 
-  Camp
-  Get expert training in coding, data, design, and digital marketing
-
-  App Design
-  View Projects
+  <div class="footer__office__container flexbox-row">
+  <div class="footer__office__container__address">
+    <p>  Designo Central Office</p>
+  <address class="footer__office__container__address__street">
+    3886 Wellington Street
+  </address>
+  <address class="footer__office__container__address__street">
+    Toronto, Ontario M9C 3J5
+  </address>
+  </div>
   
-  Graphic Design
-  View Projects
+  <div>
+    <p>Contact Us (Central Office)</p>
+    <address>
+      P : +1 253-863-8967
+    </address>
+    <address>
+      M : contact@designo.co
+    </address>
+  </div>
+</div>
+
+  <div class="footer__office__social">
+    <a href="#" class="footer__office__social__logo"><img src="/starter-code/assets/shared/desktop/icon-facebook.svg" alt="Logo facebook"></a>
+    <a href="#" class="footer__office__social__logo"><img src="/starter-code/assets/shared/desktop/icon-youtube.svg" alt="Logo facebook"></a>
+    <a href="#" class="footer__office__social__logo"><img src="/starter-code/assets/shared/desktop/icon-twitter.svg" alt="Logo facebook"></a>
+    <a href="#" class="footer__office__social__logo"><img src="/starter-code/assets/shared/desktop/icon-pinterest.svg" alt="Logo facebook"></a>
+    <a href="#" class="footer__office__social__logo"><img src="/starter-code/assets/shared/desktop/icon-instagram.svg" alt="Logo facebook"></a>
+  </div>
   
-  Let’s talk about your project
-  Ready to take it to the next level? Contact us today and find out how our expertise can help 
-  your business grow.
-  Get in touch
-  
-  Our company
-  Locations
-  Contact
-  
-  Designo Central Office
-  3886 Wellington Street
-  Toronto, Ontario M9C 3J5
-  
-  Contact Us (Central Office)
-  P : +1 253-863-8967
-  M : contact@designo.co
+</div>
+
+ 
+</footer>
 </body>
 </html>
+ 
+
